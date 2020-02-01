@@ -27,12 +27,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}{" "}
-          <a href="https://andrewsuzuki.com" title="Andrew Suzuki">
-            Andrew Suzuki
-          </a>
-        </footer>
+        <footer>©{new Date().getFullYear()}</footer>
       </div>
     </>
   )

@@ -4,7 +4,8 @@ Ideas for content:
 
 - OpenStreetMap with bike paths and recommended commuting routes
 - Bike Share (Bike New Haven)
-- Infrastructure, Advocacy
+- Advocacy / Infrastructure
+  - General Desires; Projects in the works
   - New Haven Bike Month
   - Elm City Cycling
   - ...More...
@@ -12,10 +13,21 @@ Ideas for content:
   - Recommendations for different budgets (bsbc for students, devil's gear for 500+ range, etc).
 - Where to fix your bike
   - Bradley Street Bicycle Co-op
+    - Open shop hours
+    - Classes
   - Bike shops
 - Commuting
-  - Recommended bike types
+  - General tips
+    - Fastest route to east rock -- Audubon/Lincoln connector
+    - Main streets to avoid with alternatives
+      - Orange instead of Whitney
+      - Edgewood/Goffe instead of Whalley
+  - Bike setup
     - MTB vs Hybrid vs Road
+    - Lights
+    - Fenders
+    - Rack
+  - Avoiding getting doored
   - Riding in winter
     - Apparel
   - How to lock your bike
@@ -28,6 +40,10 @@ Ideas for content:
   - New Haven Bike Rides Facebook group
   - NHBC, Tuesday/Thursday rides
   - Routes (slick react component with RideWithGPS embeds, filterable by distance, climbing, etc)
+  - Farmington Canal Trail
 - Recreational mountain/gravel biking
   - Local: East Rock, West Rock, Maltby Lakes, etc
   - Farther: Rockland, etc
+- Events
+  - Rock to Rock
+  - New Haven Bike Month
