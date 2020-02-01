@@ -2,7 +2,7 @@
 
 newhaven.bike is the landing page for cylists in New Haven, CT.
 
-See [plan.md](./doc/plan.md)
+See [plan.md](./doc/plan.md).
 
 ## Develop
 
