@@ -107,7 +107,7 @@ const IndexPage = () => (
               to: "/commuting/general-tips",
               title: "General Commuter Tips",
               blurb:
-                "How can I carry things on my bike? How can I stay safe on the road? How can I ride my bike year-round?",
+                "How can I carry things on my bike? How can I stay safe on the road? How can I ride my bike year-round? How do I avoid getting door'd?",
               emojis: [
                 ["🎒", "backpack"],
                 ["❄️", "snowflake"],
