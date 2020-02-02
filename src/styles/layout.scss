@@ -128,9 +128,12 @@ p {
 
 .header {
   margin: 1.33rem 0 1.67rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+  @include media(">=mobile") {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .site-title {
     margin: 0;
@@ -143,18 +146,30 @@ p {
   }
 
   .nav {
+    margin-top: 2px;
+    @include media(">=mobile") {
+      margin-top: 0;
+    }
+
     ul {
       list-style: none;
       display: flex;
 
       li {
-        margin-left: 5px;
+        margin-right: 10px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
 
         a {
           font-family: Helvetica, Arial, serif;
           font-weight: bold;
           font-size: 0.9em;
-          padding: 3px;
+
+          &.active {
+            color: black;
+          }
         }
       }
     }
@@ -175,36 +190,46 @@ p {
 }
 
 .hero-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 250px;
-  gap: 1.5em;
+  @include media(">=tablet") {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // grid-auto-rows: 300px;
+    // TODO make all cards the same height; defined by max-content?, for all rows (not per row)
+    gap: 1.5em;
+  }
 
   .hero-card {
     padding: 1em;
     overflow: hidden;
+    margin-bottom: 1.5em;
 
-    &.sky-blue {
-      background: #ADF5FF;
-      background: linear-gradient(0deg, transparent 0%, #ADF5FF 100%);
+    @include media(">=tablet") {
+      margin: 0;
     }
 
-    &.neon-green {
-      background: #91EBCE;
-      background: linear-gradient(0deg, transparent 0%, #91EBCE 100%);
+    &.blue {
+      background: #adf5ff;
+      // background: linear-gradient(0deg, transparent 0%, #adf5ff 100%);
+    }
+
+    &.green {
+      background: #91ebce;
+      // background: linear-gradient(0deg, transparent 0%, #91ebce 100%);
     }
 
     &.purple {
-      background: #EDD8F1;
-      background: linear-gradient(0deg, transparent 0%, #EDD8F1 100%);
+      background: #edd8f1;
+      // background: linear-gradient(0deg, transparent 0%, #edd8f1 100%);
     }
 
-    &.red {
-      background: #FFEFDC;
-      background: linear-gradient(0deg, transparent 0%, #FFEFDC 100%);
+    &.tan {
+      background: #ffefdc;
+      // background: linear-gradient(0deg, transparent 0%, #ffefdc 100%);
     }
 
-    h2, p {
+    h2,
+    p {
       margin-top: 0;
       margin-bottom: 0.33em;
     }
@@ -212,6 +237,21 @@ p {
     h2 {
       a {
         color: inherit;
+      }
+    }
+
+    .sub-cards {
+      .sub-card {
+        margin-bottom: 0.2em;
+
+        a {
+          display: block;
+        }
+
+        .blurb {
+          display: block;
+          font-size: 0.7em;
+        }
       }
     }
   }

@@ -4,158 +4,171 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+const HeroCard = ({ title, to, colorClassName, children }) => (
+  <div className={`hero-card ${colorClassName}`}>
+    <h2>
+      <Link to={to} title={title}>
+        {title}
+      </Link>
+    </h2>
+    {children}
+  </div>
+)
+
+const SubCards = ({ cards }) => (
+  <div className="sub-cards">
+    {cards.map(({ to, title, blurb, emojis }) => (
+      <div className="sub-card" key={to}>
+        <Link to={to} title={title}>
+          {title}
+          {emojis && emojis.length > 0 && (
+            <>
+              {" "}
+              {emojis.map(([emoji, label], i) => (
+                <span role="img" aria-labelledby={label} key={i}>
+                  {emoji}
+                </span>
+              ))}
+            </>
+          )}
+        </Link>
+        {blurb && <span className="blurb">{blurb}</span>}
+      </div>
+    ))}
+  </div>
+)
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="hero-cards">
-      <div className="hero-card sky-blue">
-        <h2>
-          <Link to="/community" title="Community">
-            Community
-          </Link>
-        </h2>
+      <HeroCard title="Community" to="/community" colorClassName="blue">
         <p>Connect with the New Haven cycling community!</p>
-        <ul className="bulleted">
-          <li>
-            <Link to="/community/events" title="Events">
-              Events{" "}
-              <span role="img" aria-labelledby="calendar">
-                📅
-              </span>
-            </Link>
-          </li>
-          <li>
-            <Link to="#" title="TODO">
-              Group Rides{" "}
-              <span role="img" aria-labelledby="bicycle">
-                🚴🏽
-              </span>
-              <span role="img" aria-labelledby="bicycle">
-                🚴🏾‍♀️
-              </span>
-              <span role="img" aria-labelledby="bicycle">
-                🚴🏻
-              </span>
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/community/advocacy-and-infrastructure"
-              title="Advocacy and Infrastructure"
-            >
-              Advocacy and Infrastructure{" "}
-              <span role="img" aria-labelledby="motorway">
-                🛣️
-              </span>
-            </Link>
-          </li>
-        </ul>
-      </div>
-      <div className="hero-card neon-green">
-        <h2>City Riding and Commuting</h2>
-        <ul className="bulleted">
-          <li>
-            <Link to="#" title="TODO">
-              Map of Bike Paths and Recommended Routes{" "}
-              <span role="img" aria-labelledby="cityscape">
-                🏙️
-              </span>
-            </Link>
-          </li>
-          <li>
-            <Link to="#" title="TODO">
-              Bicycle Security Tips{" "}
-              <span role="img" aria-labelledby="locked">
-                🔒
-              </span>
-            </Link>
-          </li>
-          <li>
-            <Link to="#" title="TODO">
-              General Commuter Tips{" "}
-              <span role="img" aria-labelledby="backpack">
-                🎒
-              </span>
-              <span role="img" aria-labelledby="snowflake">
-                ❄️
-              </span>
-              <span role="img" aria-labelledby="car">
-                🚘
-              </span>
-            </Link>
-          </li>
-          <li>
-            <Link to="#" title="TODO">
-              Bike New Haven (Bike Share){" "}
-              <span role="img" aria-labelledby="phone">
-                📱
-              </span>
-              <span role="img" aria-labelledby="bicycle">
-                🚲
-              </span>
-              <span role="img" aria-labelledby="bicycle">
-                🚲
-              </span>
-            </Link>
-          </li>
-        </ul>
-      </div>
-      <div className="hero-card purple">
-        <h2>Recreational Rides</h2>
-        <ul className="bulleted">
-          <li>
-            <Link to="#" title="TODO">
-              Road Routes and Route Finder{" "}
-              <span role="img" aria-labelledby="pin">
-                📍
-              </span>
-            </Link>
-          </li>
-          <li>
-            <Link to="#" title="TODO">
-              Group Rides{" "}
-              <span role="img" aria-labelledby="bicycle">
-                🚴🏽
-              </span>
-              <span role="img" aria-labelledby="bicycle">
-                🚴🏾‍♀️
-              </span>
-              <span role="img" aria-labelledby="bicycle">
-                🚴🏻
-              </span>
-            </Link>
-          </li>
-          <li>
-            <Link to="#" title="TODO">
-              Mountain Biking{" "}
-              <span role="img" aria-labelledby="mountain biker">
-                🚵‍♀️
-              </span>
-            </Link>
-          </li>
-        </ul>
-      </div>
-      <div className="hero-card red">
-        <h2>Gear and Maintenance</h2>
-        <ul className="bulleted">
-          <li>
-            <Link to="#" title="TODO">
-              Get Your Bike Fixed!{" "}
-              <span role="img" aria-labelledby="mechanic">
-                👩‍🔧
-              </span>
-            </Link>
-          </li>
-          <li>
-            <Link to="#" title="TODO">
-              Choosing a Bike to Purchase{" "}
-              <span role="img" aria-labelledby="credit card">
-                💳
-              </span>
-            </Link>
-          </li>
-        </ul>
-      </div>
+        <SubCards
+          cards={[
+            {
+              to: "/community/events",
+              title: "Events",
+              blurb: "TODO",
+              emojis: [["📅", "calendar"]],
+            },
+            {
+              to: "/rides/group-rides",
+              title: "Group Rides",
+              blurb: "TODO",
+              emojis: [
+                ["🚴🏽", "cyclist"],
+                ["🚴🏾", "cyclist"],
+                ["🚴🏻", "cyclist"],
+              ],
+            },
+            {
+              to: "/community/advocacy",
+              title: "Advocacy and Infrastructure",
+              blurb: "TODO",
+              emojis: [["🛣️", "motorway"]],
+            },
+            {
+              to: "/community/volunteering",
+              title: "Volunteering",
+              blurb: "TODO",
+              emojis: [["❤️", "heart"]],
+            },
+          ]}
+        />
+      </HeroCard>
+      <HeroCard
+        title="City Riding and Commuting"
+        to="/commuting"
+        colorClassName="green"
+      >
+        <p>Learn how to navigate the City of New Haven with your bike.</p>
+        <SubCards
+          cards={[
+            {
+              to: "/commuting/map",
+              title: "Map of Bike Paths and Recommended Routes",
+              blurb: "TODO",
+              emojis: [["🏙️", "cityscape"]],
+            },
+            {
+              to: "/commuting/bicycle-security",
+              title: "Bicycle Security Tips",
+              blurb: "TODO",
+              emojis: [["🔒", "locked"]],
+            },
+            {
+              to: "/commuting/general-tips",
+              title: "General Commuter Tips",
+              blurb: "TODO",
+              emojis: [
+                ["🎒", "backpack"],
+                ["❄️", "snowflake"],
+                ["🚘", "car"],
+              ],
+            },
+            {
+              to: "/commuting/bike-share",
+              title: "Bike Share",
+              blurb: "TODO",
+              emojis: [
+                ["📱", "phone"],
+                ["🚲", "bicycle"],
+                ["🚲", "bicycle"],
+              ],
+            },
+          ]}
+        />
+      </HeroCard>
+      <HeroCard title="Recreational Rides" to="/rides" colorClassName="purple">
+        <p>TODO</p>
+        <SubCards
+          cards={[
+            {
+              to: "/rides/routes",
+              title: "Road Routes and Route Finder",
+              blurb:
+                "Find the perfect route for your next bike ride, from 5 to 100 miles!",
+              emojis: [["📍", "pin"]],
+            },
+            {
+              to: "/rides/group-rides",
+              title: "Group Rides",
+              blurb: "TODO",
+              emojis: [
+                ["🚴🏽", "cyclist"],
+                ["🚴🏾", "cyclist"],
+                ["🚴🏻", "cyclist"],
+              ],
+            },
+            {
+              to: "/rides/mountain-biking",
+              title: "Mountain Biking",
+              blurb: "TODO",
+              emojis: [["🚵‍♀️", "mountain biker"]],
+            },
+          ]}
+        />
+      </HeroCard>
+      <HeroCard title="Gear and Maintenance" to="/gear" colorClassName="tan">
+        <p>TODO</p>
+        <SubCards
+          cards={[
+            {
+              to: "/gear/fix-your-bike",
+              title: "Get Your Bike Fixed!",
+              blurb: "TODO",
+              emojis: [["👩‍🔧", "mechanic"]],
+            },
+            {
+              to: "/gear/purchase-a-bike",
+              title: "Choosing a Bike to Purchase",
+              blurb: "TODO",
+              emojis: [["💳", "credit card"]],
+            },
+          ]}
+        />
+      </HeroCard>
     </div>
   </Layout>
 )
