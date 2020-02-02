@@ -129,7 +129,7 @@ const IndexPage = () => (
         />
       </HeroCard>
       <HeroCard title="Recreational Rides" to="/rides" colorClassName="purple">
-        <p>For body and mind.</p>
+        <p>Explore Connecticut by bike, with or without a group.</p>
         <SubCards
           cards={[
             {
