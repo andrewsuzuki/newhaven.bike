@@ -1,6 +1,18 @@
 # Plan
 
-- Community
+## Design
+
+Simple header (home, about, contact). No mobile menu.
+
+On subpages, display button links to four categories.
+
+## Home Page
+
+Four big "cards" (for each main topic below) with big link to their subpage, but also with direct links to articles.
+
+## Content
+
+- **Community**
   - Events
     - New Haven Bike Party
     - Rock to Rock
@@ -10,7 +22,7 @@
     - Elm City Cycling
     - New Haven Bike Month
     - ...More...
-- City Riding / Commuting
+- **City Riding and Commuting**
   - Map with bike paths and recommended commuting routes
   - Bike Share (Bike New Haven)
   - General tips
@@ -32,18 +44,19 @@
     - Wheel locks
     - Avoid front porch, wood railings, locking outside at night, etc
     - Remove lights
-- Recreational Rides
+- **Rides**
   - Road rides
     - Routes (slick react component with RideWithGPS embeds, filterable by distance, climbing, etc)
       - ...and how to follow them
     - New Haven Bike Rides Facebook group
     - NHBC, Tuesday/Thursday rides
+    - Yale Cycling Team
     - Farmington Canal Trail
-  - Mountain/gravel biking
+  - Mountain biking
     - Local: East Rock, West Rock, Maltby Lakes, etc
     - Farther: Rockland, etc
   - New Haven Bike Party
-- Bike Help
+- **Bike Help**
   - Purchasing a bike
     - Recommendations for different budgets (bsbc for students, devil's gear for 500+ range, etc).
   - Where to fix your bike

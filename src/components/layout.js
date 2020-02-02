@@ -17,19 +17,18 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>©{new Date().getFullYear()}</footer>
+    <div className="wrapper">
+      <div className="sticky-push">
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <main className="main">{children}</main>
       </div>
-    </>
+      <footer className="footer">
+        &copy; {new Date().getFullYear()} newhaven.bike &middot; By{" "}
+        <a href="https://andrewsuzuki.com" title="Andrew Suzuki">
+          Andrew Suzuki
+        </a>
+      </footer>
+    </div>
   )
 }
 

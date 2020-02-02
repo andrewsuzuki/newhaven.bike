@@ -1,12 +1,14 @@
 @import "./include-media.scss";
 
 $lightgray: rgb(221, 221, 221);
+// $link-color: #4A7763; // rgb(0, 0, 0);
+$link-color: #00a7e1;
 
 /* Reset */
 
 html {
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 *,
@@ -45,6 +47,15 @@ img {
 
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($link-color, 5);
+  }
 }
 
 h1,
@@ -97,17 +108,105 @@ p {
   margin: 1em 0;
 }
 
-.container {
+.wrapper {
   width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   padding: 0 15px;
 
-  @include media(">=mobile", "<tablet") {
-    padding: 0 44px;
-  }
-
-  @include media(">=tablet") {
-    width: 680px;
+  @include media(">=desktop") {
+    width: 960px;
     padding: 0;
     margin: 0 auto;
+  }
+
+  .sticky-push {
+    flex: 1;
+  }
+}
+
+.header {
+  margin: 1.33rem 0 1.67rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .site-title {
+    margin: 0;
+
+    a {
+      font-family: Helvetica, Arial, serif;
+      font-size: 1.5rem;
+      color: black;
+    }
+  }
+
+  .nav {
+    ul {
+      list-style: none;
+      display: flex;
+
+      li {
+        margin-left: 5px;
+
+        a {
+          font-family: Helvetica, Arial, serif;
+          font-weight: bold;
+          font-size: 0.9em;
+          padding: 3px;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  line-height: 1.5;
+
+  // > *:last-child {
+  //   margin-bottom: 0;
+  // }
+}
+
+.footer {
+  margin: 1rem 0;
+  font-size: 0.9em;
+}
+
+.hero-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 300px;
+  gap: 1.5em;
+
+  .hero-card {
+    padding: 1em;
+    overflow: hidden;
+
+    &.sky-blue {
+      background: #ADF5FF;
+      background: linear-gradient(0deg, transparent 0%, #ADF5FF 100%);
+    }
+
+    &.neon-green {
+      background: #6CDDBA;
+      background: linear-gradient(0deg, transparent 0%, #6CDDBA 100%);
+    }
+
+    &.purple {
+      background: #C4B4DB;
+      background: linear-gradient(0deg, transparent 0%, #C4B4DB 100%);
+    }
+
+    &.red {
+      background: #ED6A5A;
+      background: linear-gradient(0deg, transparent 0%, #ED6A5A 100%);
+    }
+
+    h2, p {
+      margin-top: 0;
+      margin-bottom: 0.33em;
+    }
   }
 }
