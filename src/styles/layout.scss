@@ -177,7 +177,7 @@ p {
 .hero-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 300px;
+  grid-auto-rows: 250px;
   gap: 1.5em;
 
   .hero-card {
@@ -190,23 +190,34 @@ p {
     }
 
     &.neon-green {
-      background: #6CDDBA;
-      background: linear-gradient(0deg, transparent 0%, #6CDDBA 100%);
+      background: #91EBCE;
+      background: linear-gradient(0deg, transparent 0%, #91EBCE 100%);
     }
 
     &.purple {
-      background: #C4B4DB;
-      background: linear-gradient(0deg, transparent 0%, #C4B4DB 100%);
+      background: #EDD8F1;
+      background: linear-gradient(0deg, transparent 0%, #EDD8F1 100%);
     }
 
     &.red {
-      background: #ED6A5A;
-      background: linear-gradient(0deg, transparent 0%, #ED6A5A 100%);
+      background: #FFEFDC;
+      background: linear-gradient(0deg, transparent 0%, #FFEFDC 100%);
     }
 
     h2, p {
       margin-top: 0;
       margin-bottom: 0.33em;
     }
+
+    h2 {
+      a {
+        color: inherit;
+      }
+    }
   }
+}
+
+ul.bulleted {
+  list-style-type: disc;
+  list-style-position: inside;
 }

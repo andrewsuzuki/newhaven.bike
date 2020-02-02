@@ -22,22 +22,22 @@ Four big "cards" (for each main topic below) with big link to their subpage, but
     - Elm City Cycling
     - New Haven Bike Month
     - ...More...
+  - Group Rides (link to Road Rides)
 - **City Riding and Commuting**
   - Map with bike paths and recommended commuting routes
-  - Bike Share (Bike New Haven)
-  - General tips
     - Fastest route to east rock -- Audubon/Lincoln connector
     - Main streets to avoid with alternatives
       - Orange instead of Whitney
       - Edgewood/Goffe instead of Whalley
-  - Commuter Bike setup
-    - MTB vs Hybrid vs Road
-    - Lights
-    - Fenders
-    - Rack
-  - Commuter Clothing
-    - Winter gear
-  - Avoiding getting doored
+  - Bike Share (Bike New Haven)
+  - General Commuter Tips
+    - Winter Clothing
+    - Avoiding getting doored
+    - Commuter Bike setup
+      - MTB vs Hybrid vs Road
+      - Lights
+      - Fenders
+      - Rack
   - How to not get your bike stolen / How to lock your bike
     - Recommended locks
     - Lock to frame
@@ -45,18 +45,18 @@ Four big "cards" (for each main topic below) with big link to their subpage, but
     - Avoid front porch, wood railings, locking outside at night, etc
     - Remove lights
 - **Rides**
-  - Road rides
-    - Routes (slick react component with RideWithGPS embeds, filterable by distance, climbing, etc)
-      - ...and how to follow them
-    - New Haven Bike Rides Facebook group
-    - NHBC, Tuesday/Thursday rides
-    - Yale Cycling Team
+  - Road Routes (slick react component with RideWithGPS embeds, filterable by distance, climbing, etc)
     - Farmington Canal Trail
+  - Group Rides
+    - New Haven Bike Rides Facebook group `organize a group ride`
+    - NHBC, Tuesday/Thursday rides `medium pace`
+    - OutSpokin `slower pace`
+    - New Haven Bike Party `slower pace / party`
+    - Yale Cycling Team `fast pace`
   - Mountain biking
     - Local: East Rock, West Rock, Maltby Lakes, etc
     - Farther: Rockland, etc
-  - New Haven Bike Party
-- **Bike Help**
+- **Gear and Maintenance**
   - Purchasing a bike
     - Recommendations for different budgets (bsbc for students, devil's gear for 500+ range, etc).
   - Where to fix your bike
