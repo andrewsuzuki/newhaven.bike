@@ -47,15 +47,17 @@ const IndexPage = () => (
         <SubCards
           cards={[
             {
-              to: "/community/events",
-              title: "Events",
-              blurb: "TODO",
+              to: "/community/events-and-meetups",
+              title: "Events and Meetups",
+              blurb:
+                "Learn about New Haven cycling events like New Haven Bike Party, Rock to Rock, New Haven Bike Month, New Haven Grand Prix, and more!",
               emojis: [["📅", "calendar"]],
             },
             {
               to: "/rides/group-rides",
               title: "Group Rides",
-              blurb: "TODO",
+              blurb:
+                "Find a group of other cyclists to ride with! There's a group ride for everyone, from chill cruises downtown to all-out racing!",
               emojis: [
                 ["🚴🏽", "cyclist"],
                 ["🚴🏾", "cyclist"],
@@ -65,13 +67,15 @@ const IndexPage = () => (
             {
               to: "/community/advocacy",
               title: "Advocacy and Infrastructure",
-              blurb: "TODO",
+              blurb:
+                "Help us promote cycling and cycling infrastructure in the Elm City.",
               emojis: [["🛣️", "motorway"]],
             },
             {
               to: "/community/volunteering",
               title: "Volunteering",
-              blurb: "TODO",
+              blurb:
+                "Learn about volunteering at the Bradley Street Bicycle Co-op and other organizations.",
               emojis: [["❤️", "heart"]],
             },
           ]}
@@ -82,25 +86,28 @@ const IndexPage = () => (
         to="/commuting"
         colorClassName="green"
       >
-        <p>Learn how to navigate the City of New Haven with your bike.</p>
+        <p>Learn how to navigate the City of New Haven on your bike.</p>
         <SubCards
           cards={[
             {
               to: "/commuting/map",
               title: "Map of Bike Paths and Recommended Routes",
-              blurb: "TODO",
+              blurb:
+                "The fastest, safest, and most-fun ways to get through the city.",
               emojis: [["🏙️", "cityscape"]],
             },
             {
               to: "/commuting/bicycle-security",
               title: "Bicycle Security Tips",
-              blurb: "TODO",
+              blurb:
+                "Follow these basic rules to prevent your bike from getting stolen.",
               emojis: [["🔒", "locked"]],
             },
             {
               to: "/commuting/general-tips",
               title: "General Commuter Tips",
-              blurb: "TODO",
+              blurb:
+                "How can I carry things on my bike? How can I stay safe on the road? How can I ride my bike year-round?",
               emojis: [
                 ["🎒", "backpack"],
                 ["❄️", "snowflake"],
@@ -110,7 +117,8 @@ const IndexPage = () => (
             {
               to: "/commuting/bike-share",
               title: "Bike Share",
-              blurb: "TODO",
+              blurb:
+                "Don't own a bicycle? No problem! Pick up a rental from any of the bike share stations around town.",
               emojis: [
                 ["📱", "phone"],
                 ["🚲", "bicycle"],
@@ -121,7 +129,7 @@ const IndexPage = () => (
         />
       </HeroCard>
       <HeroCard title="Recreational Rides" to="/rides" colorClassName="purple">
-        <p>TODO</p>
+        <p>For body and mind.</p>
         <SubCards
           cards={[
             {
@@ -134,7 +142,8 @@ const IndexPage = () => (
             {
               to: "/rides/group-rides",
               title: "Group Rides",
-              blurb: "TODO",
+              blurb:
+                "Find a group of other cyclists to ride with! There's a group ride for everyone, from chill cruises downtown to all-out racing!",
               emojis: [
                 ["🚴🏽", "cyclist"],
                 ["🚴🏾", "cyclist"],
@@ -144,27 +153,35 @@ const IndexPage = () => (
             {
               to: "/rides/mountain-biking",
               title: "Mountain Biking",
-              blurb: "TODO",
+              blurb: "Hit the local trails!",
               emojis: [["🚵‍♀️", "mountain biker"]],
             },
           ]}
         />
       </HeroCard>
-      <HeroCard title="Gear and Maintenance" to="/gear" colorClassName="tan">
-        <p>TODO</p>
+      <HeroCard title="Bikes and Maintenance" to="/bikes" colorClassName="tan">
+        <p>Bikes are beautiful (especially when maintained)!</p>
         <SubCards
           cards={[
             {
-              to: "/gear/fix-your-bike",
+              to: "/bikes/fix-your-bike",
               title: "Get Your Bike Fixed!",
-              blurb: "TODO",
+              blurb:
+                "Find a bike shop, or learn how to do it yourself at the co-op!",
               emojis: [["👩‍🔧", "mechanic"]],
             },
             {
-              to: "/gear/purchase-a-bike",
+              to: "/bikes/purchase-a-bike",
               title: "Choosing a Bike to Purchase",
-              blurb: "TODO",
+              blurb:
+                "General recommendations for different budgets and types of riding.",
               emojis: [["💳", "credit card"]],
+            },
+            {
+              to: "/bikes/bikes-of-new-haven",
+              title: "Bikes of New Haven",
+              blurb: "Check out our personal rides!",
+              emojis: [["😍", "smiling face with heart eyes"]],
             },
           ]}
         />
