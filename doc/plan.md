@@ -1,49 +1,53 @@
 # Plan
 
-Ideas for content:
-
-- OpenStreetMap with bike paths and recommended commuting routes
-- Bike Share (Bike New Haven)
-- Advocacy / Infrastructure
-  - General Desires; Projects in the works
-  - New Haven Bike Month
-  - Elm City Cycling
-  - ...More...
-- Purchasing a bike
-  - Recommendations for different budgets (bsbc for students, devil's gear for 500+ range, etc).
-- Where to fix your bike
-  - Bradley Street Bicycle Co-op
-    - Open shop hours
-    - Classes
-  - Bike shops
-- Commuting
+- Community
+  - Events
+    - New Haven Bike Party
+    - Rock to Rock
+    - New Haven Bike Month
+  - Advocacy / Infrastructure
+    - General Desires; Projects in the works
+    - Elm City Cycling
+    - New Haven Bike Month
+    - ...More...
+- City Riding / Commuting
+  - Map with bike paths and recommended commuting routes
+  - Bike Share (Bike New Haven)
   - General tips
     - Fastest route to east rock -- Audubon/Lincoln connector
     - Main streets to avoid with alternatives
       - Orange instead of Whitney
       - Edgewood/Goffe instead of Whalley
-  - Bike setup
+  - Commuter Bike setup
     - MTB vs Hybrid vs Road
     - Lights
     - Fenders
     - Rack
+  - Commuter Clothing
+    - Winter gear
   - Avoiding getting doored
-  - Riding in winter
-    - Apparel
-  - How to lock your bike
+  - How to not get your bike stolen / How to lock your bike
     - Recommended locks
     - Lock to frame
     - Wheel locks
     - Avoid front porch, wood railings, locking outside at night, etc
     - Remove lights
-- Recreational road rides
-  - New Haven Bike Rides Facebook group
-  - NHBC, Tuesday/Thursday rides
-  - Routes (slick react component with RideWithGPS embeds, filterable by distance, climbing, etc)
-  - Farmington Canal Trail
-- Recreational mountain/gravel biking
-  - Local: East Rock, West Rock, Maltby Lakes, etc
-  - Farther: Rockland, etc
-- Events
-  - Rock to Rock
-  - New Haven Bike Month
+- Recreational Rides
+  - Road rides
+    - Routes (slick react component with RideWithGPS embeds, filterable by distance, climbing, etc)
+      - ...and how to follow them
+    - New Haven Bike Rides Facebook group
+    - NHBC, Tuesday/Thursday rides
+    - Farmington Canal Trail
+  - Mountain/gravel biking
+    - Local: East Rock, West Rock, Maltby Lakes, etc
+    - Farther: Rockland, etc
+  - New Haven Bike Party
+- Bike Help
+  - Purchasing a bike
+    - Recommendations for different budgets (bsbc for students, devil's gear for 500+ range, etc).
+  - Where to fix your bike
+    - Bradley Street Bicycle Co-op
+      - Open shop hours
+      - Classes
+    - Bike shops

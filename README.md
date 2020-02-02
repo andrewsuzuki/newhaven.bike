@@ -10,6 +10,13 @@ See [plan.md](./doc/plan.md).
 2. Run `gatsby develop`
 3. Go to `http://localhost:8000`
 
-## Deploy
+## Production
 
-Deployed on Netlify.
+Automatically deployed to Netlify from the `production` branch.
+
+```shell
+git checkout production
+git merge master
+git push --all
+git checkout master
+```
