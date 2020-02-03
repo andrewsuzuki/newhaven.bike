@@ -37,3 +37,5 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+export const Narrow = ({ children }) => <div className="narrow">{children}</div>

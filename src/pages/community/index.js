@@ -1,13 +1,15 @@
 import React from "react"
 
-import Layout from "../../components/layout"
+import Layout, { Narrow } from "../../components/layout"
 import SEO from "../../components/seo"
 
 const CommunityPage = () => (
   <Layout>
     <SEO title="Community" />
-    <h1>Community</h1>
-    <p>TODO</p>
+    <Narrow>
+      <h1>Community</h1>
+      <p>TODO</p>
+    </Narrow>
   </Layout>
 )
 
