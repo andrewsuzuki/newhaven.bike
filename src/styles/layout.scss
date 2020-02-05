@@ -266,9 +266,37 @@ p {
   margin-top: 2em;
   overflow-x: auto;
 
+  .routes-list-mobile {
+    display: block;
+
+    // Hide above mobile
+    @include media(">=mobile") {
+      display: none;
+    }
+
+    // Route
+    > div {
+      margin-top: 0.67em;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+      a {
+        font-size: 1.33em;
+      }
+    }
+  }
+
   table {
     width: 100%;
     max-width: 100%;
+    display: none;
+
+    // Show above mobile
+    @include media(">=mobile") {
+      display: table;
+    }
 
     thead {
       tr {

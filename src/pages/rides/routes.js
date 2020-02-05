@@ -54,21 +54,13 @@ const RouteFinder = ({ routes }) => {
               <em>No results. Try adjusting the filters.</em>
             </p>
           ) : (
-            // TODO different structure for mobile? tables aren't clean
-            <table>
-              <thead>
-                <tr>
-                  <th>Route</th>
-                  <th>Source</th>
-                  <th>Distance</th>
-                  <th>Climbing</th>
-                </tr>
-              </thead>
-              <tbody>
+            <>
+              {/* MOBILE */}
+              <div className="routes-list-mobile">
                 {filteredRoutes.map(
-                  ({ slug, title, stub, source, distance, climbing }) => (
-                    <tr key={slug}>
-                      <td>
+                  ({ slug, title, stub, distance, climbing }) => (
+                    <div key={slug}>
+                      <div>
                         <Link
                           to={`/rides/routes/${slug}`}
                           title={`Route: ${title}`}
@@ -81,15 +73,52 @@ const RouteFinder = ({ routes }) => {
                             <span className="route-tag">Stub</span>
                           </>
                         )}
-                      </td>
-                      <td>{source}</td>
-                      <td>{distance}mi</td>
-                      <td>{climbing}ft</td>
-                    </tr>
+                      </div>
+                      <div>
+                        <span>Distance</span> {distance}mi &middot;{" "}
+                        <span>Climbing</span> {climbing}ft
+                      </div>
+                    </div>
                   )
                 )}
-              </tbody>
-            </table>
+              </div>
+              {/* DESKTOP and TABLET */}
+              <table>
+                <thead>
+                  <tr>
+                    <th>Route</th>
+                    <th>Source</th>
+                    <th>Distance</th>
+                    <th>Climbing</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {filteredRoutes.map(
+                    ({ slug, title, stub, source, distance, climbing }) => (
+                      <tr key={slug}>
+                        <td>
+                          <Link
+                            to={`/rides/routes/${slug}`}
+                            title={`Route: ${title}`}
+                          >
+                            {title}
+                          </Link>
+                          {stub && (
+                            <>
+                              {" "}
+                              <span className="route-tag">Stub</span>
+                            </>
+                          )}
+                        </td>
+                        <td>{source}</td>
+                        <td>{distance}mi</td>
+                        <td>{climbing}ft</td>
+                      </tr>
+                    )
+                  )}
+                </tbody>
+              </table>
+            </>
           )}
         </div>
       </Narrow>
