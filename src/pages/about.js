@@ -8,7 +8,14 @@ const AboutPage = () => (
     <SEO title="About" />
     <Narrow>
       <h1>About</h1>
-      <p>TODO</p>
+      <p>
+        <strong>newhaven.bike</strong> is the front page for cycling in New
+        Haven, CT.
+      </p>
+      <h2>Goals</h2>
+      <ul className="bulleted">
+        <li>TODO</li>
+      </ul>
     </Narrow>
   </Layout>
 )

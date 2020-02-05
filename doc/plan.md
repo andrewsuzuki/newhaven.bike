@@ -13,16 +13,16 @@ Four big "cards" (for each main topic below) with big link to their subpage, but
 ## Content
 
 - **Community**
-  - Events
+  - Events and Meetups
     - New Haven Bike Party
     - Rock to Rock
     - New Haven Bike Month
-  - Advocacy / Infrastructure
+    - New Haven Grand Prix
+  - Advocacy and Infrastructure
     - General Desires; Projects in the works
     - Elm City Cycling
     - New Haven Bike Month
     - ...More...
-  - Group Rides (link to Road Rides)
   - Volunteering
 - **City Riding and Commuting**
   - Map with bike paths and recommended commuting routes
@@ -30,7 +30,12 @@ Four big "cards" (for each main topic below) with big link to their subpage, but
     - Main streets to avoid with alternatives
       - Orange instead of Whitney
       - Edgewood/Goffe instead of Whalley
-  - Bike Share (Bike New Haven)
+  - Bicycle Security Tips
+    - Recommended locks
+    - Lock to frame
+    - Wheel locks
+    - Avoid front porch, wood railings, locking outside at night, etc
+    - Remove lights
   - General Commuter Tips
     - Winter Clothing
     - Avoiding getting doored
@@ -39,15 +44,9 @@ Four big "cards" (for each main topic below) with big link to their subpage, but
       - Lights
       - Fenders
       - Rack
-  - How to not get your bike stolen / How to lock your bike
-    - Recommended locks
-    - Lock to frame
-    - Wheel locks
-    - Avoid front porch, wood railings, locking outside at night, etc
-    - Remove lights
+  - Bike Share (Bike New Haven)
 - **Rides**
-  - Road Routes (slick react component with RideWithGPS embeds, filterable by distance, climbing, etc)
-    - Farmington Canal Trail
+  - Road Routes and Route Finder
   - Group Rides
     - New Haven Bike Rides Facebook group `organize a group ride`
     - NHBC, Tuesday/Thursday rides `medium pace`
@@ -58,10 +57,11 @@ Four big "cards" (for each main topic below) with big link to their subpage, but
     - Local: East Rock, West Rock, Maltby Lakes, etc
     - Farther: Rockland, etc
 - **Gear and Maintenance**
-  - Purchasing a bike
-    - Recommendations for different budgets (bsbc for students, devil's gear for 500+ range, etc).
   - Where to fix your bike
     - Bradley Street Bicycle Co-op
       - Open shop hours
       - Classes
     - Bike shops
+  - Purchasing a bike
+    - Recommendations for different budgets (bsbc for students, devil's gear for 500+ range, etc).
+  - Bikes of New Haven (tentative)

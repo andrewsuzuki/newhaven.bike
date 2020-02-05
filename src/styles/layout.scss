@@ -253,7 +253,7 @@ p {
           display: block;
         }
 
-        .blurb {
+        .subtitle {
           display: block;
           font-size: 0.7em;
         }
@@ -287,6 +287,10 @@ p {
   border-radius: 0.2em;
 }
 
+.button-large {
+  font-size: 1.33em;
+}
+
 .route-tag {
   display: inline-block;
   padding: 0 0.3em;
@@ -295,12 +299,10 @@ p {
   border-radius: 0.2em;
 }
 
-.routes-selected {
-  margin-top: 1em;
-
-  .button-link {
-    display: inline-block;
-    font-weight: bold;
+.route-description {
+  ul {
+    list-style-type: disc;
+    list-style-position: inside;
   }
 }
 

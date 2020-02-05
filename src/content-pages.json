@@ -1,0 +1,105 @@
+[
+  {
+    "category": "community",
+    "to": "/community/events-and-meetups",
+    "title": "Events and Meetups",
+    "subtitle": "Learn about New Haven cycling events like New Haven Bike Party, Rock to Rock, New Haven Bike Month, New Haven Grand Prix, and more!",
+    "emojis": [["📅", "calendar"]]
+  },
+  {
+    "category": "community",
+    "to": "/community/advocacy",
+    "title": "Advocacy and Infrastructure",
+    "subtitle": "Help us promote cycling and cycling infrastructure in the Elm City.",
+    "emojis": [["🛣️", "motorway"]]
+  },
+  {
+    "category": "community",
+    "to": "/community/volunteering",
+    "title": "Volunteering",
+    "subtitle": "Learn about volunteering at the Bradley Street Bicycle Co-op and other organizations.",
+    "emojis": [["❤️", "heart"]]
+  },
+  {
+    "category": "commuting",
+    "to": "/commuting/map",
+    "title": "Map of Bike Paths and Recommended Routes",
+    "subtitle": "The fastest, safest, and most-fun ways to get through the city.",
+    "emojis": [["🏙️", "cityscape"]]
+  },
+  {
+    "category": "commuting",
+    "to": "/commuting/bicycle-security",
+    "title": "Bicycle Security Tips",
+    "subtitle": "Follow these basic rules to prevent your bike from getting stolen.",
+    "emojis": [["🔒", "locked"]]
+  },
+  {
+    "category": "commuting",
+    "to": "/commuting/general-tips",
+    "title": "General Commuter Tips",
+    "subtitle": "How can I carry things on my bike? How can I stay safe on the road? How can I ride my bike year-round? How do I avoid getting door'd?",
+    "emojis": [
+      ["🎒", "backpack"],
+      ["❄️", "snowflake"],
+      ["🚘", "car"]
+    ]
+  },
+  {
+    "category": "commuting",
+    "to": "/commuting/bike-share",
+    "title": "Bike Share",
+    "subtitle": "Don't own a bicycle? No problem! Pick up a rental from any of the bike share stations around town.",
+    "emojis": [
+      ["📱", "phone"],
+      ["🚲", "bicycle"],
+      ["🚲", "bicycle"]
+    ]
+  },
+  {
+    "category": "rides",
+    "to": "/rides/routes",
+    "title": "Road Routes and Route Finder",
+    "subtitle": "Find the perfect route for your next bike ride, from 5 to 100 miles!",
+    "emojis": [["📍", "pin"]]
+  },
+  {
+    "category": "rides",
+    "to": "/rides/group-rides",
+    "title": "Group Rides",
+    "subtitle": "Find a group of other cyclists to ride with! There's a group ride for everyone, from chill cruises downtown to all-out racing!",
+    "emojis": [
+      ["🚴🏽", "cyclist"],
+      ["🚴🏾", "cyclist"],
+      ["🚴🏻", "cyclist"]
+    ]
+  },
+  {
+    "category": "rides",
+    "to": "/rides/mountain-biking",
+    "title": "Mountain Biking",
+    "subtitle": "Hit the local trails!",
+    "emojis": [["🚵‍♀️", "mountain biker"]]
+  },
+  {
+    "category": "bikes",
+    "to": "/bikes/fix-your-bike",
+    "title": "Get Your Bike Fixed!",
+    "subtitle": "Find a bike shop, or learn how to do it yourself at the co-op!",
+    "emojis": [["👩‍🔧", "mechanic"]]
+  },
+  {
+    "category": "bikes",
+    "to": "/bikes/purchase-a-bike",
+    "title": "Choosing a Bike to Purchase",
+    "subtitle": "General recommendations for different budgets and types of riding.",
+    "emojis": [["💳", "credit card"]]
+  },
+  {
+    "category": "bikes",
+    "to": "/bikes/bikes-of-new-haven",
+    "title": "Bikes of New Haven",
+    "subtitle": "Check out our personal rides!",
+    "emojis": [["😍", "smiling face with heart eyes"]]
+  }
+]
