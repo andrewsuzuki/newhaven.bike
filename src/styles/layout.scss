@@ -343,3 +343,19 @@ ul.bulleted {
   list-style-type: disc;
   list-style-position: inside;
 }
+
+.category-listing {
+  &-page {
+    margin-bottom: 1em;
+
+    a {
+      display: block;
+      font-size: 1.33em;
+    }
+
+    .subtitle {
+      display: block;
+      font-size: 1em;
+    }
+  }
+}

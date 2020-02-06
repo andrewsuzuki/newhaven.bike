@@ -12,7 +12,8 @@ See [plan.md](./doc/plan.md).
 - Route Finder Remaining
   - Copy all routes to my RideWithGPS
   - More routes...Canal Trail? Mulberry? West Woods?
-- Domain name
+- Favicon
+- DNS stuff
 
 ## Develop
 
