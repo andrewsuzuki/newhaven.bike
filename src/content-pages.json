@@ -94,12 +94,5 @@
     "title": "Choosing a Bike to Purchase",
     "subtitle": "General recommendations for different budgets and types of riding.",
     "emojis": [["💳", "credit card"]]
-  },
-  {
-    "category": "bikes",
-    "to": "/bikes/bikes-of-new-haven",
-    "title": "Bikes of New Haven",
-    "subtitle": "Check out our personal rides!",
-    "emojis": [["😍", "smiling face with heart eyes"]]
   }
 ]

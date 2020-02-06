@@ -64,4 +64,3 @@ Four big "cards" (for each main topic below) with big link to their subpage, but
     - Bike shops
   - Purchasing a bike
     - Recommendations for different budgets (bsbc for students, devil's gear for 500+ range, etc).
-  - Bikes of New Haven (tentative)
