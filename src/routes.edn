@@ -39,21 +39,13 @@
   <li>
     Pet the animals (when it's warm) or go ice skating (when it's cold)
     at
-    <a href=\"http://www.brooksvalepark.com/\" title=\"Brooksvale Park\">
-      Brooksvale Park
-    </a>
-    .
+    <a href=\"http://www.brooksvalepark.com/\" title=\"Brooksvale Park\">Brooksvale Park</a>.
   </li>
   <li>
     If you're into riding with 25-60 other people at 24mph, check out
     the
-    <a
-      href=\"http://www.cheshirecycle.com/group-and-shop-rides.html\"
-      title=\"Sleeping Giant Ride\"
-    >
-      Sleeping Giant Ride
-    </a>
-    ! Racers only.
+    <a href=\"http://www.cheshirecycle.com/group-and-shop-rides.html\" title=\"Sleeping Giant Ride\" >Sleeping Giant Ride</a>!
+    Racers only.
   </li>
   <li>
     Ride back the same way, or on the Farmington Canal Trail (~16mi
@@ -106,6 +98,7 @@
   :climbing 513
   :description "
 <p>Quick loop to the beach!</p>
+<p>You don't have to pay any fees if you're riding in on your bike.</p>
 "}
  {:slug "yale-loop"
   :ride-with-gps 1229657
@@ -126,13 +119,7 @@
 </p>
 <p>
   Learn more on Yale Cycling's website
-  <a
-    href=\"http://www.yalecycling.org/ride-maps\"
-    title=\"Yale Cycling Ride Maps\"
-  >
-    here
-  </a>
-  .
+  <a href=\"http://www.yalecycling.org/ride-maps\" title=\"Yale Cycling Ride Maps\" >here</a>.
 </p>
 "}
  {:slug "little-city"

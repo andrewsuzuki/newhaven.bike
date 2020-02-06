@@ -327,6 +327,11 @@ p {
   border-radius: 0.2em;
 }
 
+.route-ride-with-gps-iframe {
+  // Allow scrolling (instead of iframe map panning) on mobile devices
+  max-height: 85vh;
+}
+
 .route-description {
   ul {
     list-style-type: disc;

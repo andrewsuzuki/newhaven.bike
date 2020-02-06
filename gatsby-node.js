@@ -3,16 +3,38 @@
  * https://www.gatsbyjs.org/docs/node-apis/
  */
 
-const path = require(`path`)
-const fs = require(`fs`)
-const edn = require(`jsedn`)
+const path = require("path")
+const edn = require("jsedn")
 
-exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
+exports.onCreateNode = async ({
+  node,
+  actions,
+  loadNodeContent,
+  createContentDigest,
+  createNodeId,
+  reporter,
+}) => {
   const { createNode } = actions
 
+  // Only handle routes.edn file node
+  if (node.internal.type !== "File" || node.sourceInstanceName !== "routes") {
+    return {}
+  }
+
+  const content = await loadNodeContent(node)
+
+  let routesEdn = null
+  try {
+    routesEdn = edn.parse(content)
+  } catch (error) {
+    reporter.panicOnBuild("Error when parsing routes.edn", error)
+    return
+  }
+
+  const routes = edn.toJS(routesEdn)
+
   // Create route nodes
-  edn
-    .toJS(edn.parse(fs.readFileSync(path.resolve("./src/routes.edn"), "utf8")))
+  routes
     // Remove colons from EDN keywords
     .map(route =>
       Object.keys(route).reduce(
@@ -29,7 +51,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
         parent: null,
         children: [],
         internal: {
-          type: `Route`,
+          type: "Route",
           contentDigest: createContentDigest({ route }),
         },
         route,
@@ -40,7 +62,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
-  const routePageTemplate = path.resolve(`./src/templates/route-page.js`)
+  const routePageTemplate = path.resolve("./src/templates/route-page.js")
 
   // Get route nodes
   const result = await graphql(`
@@ -65,7 +87,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   `)
 
   if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    reporter.panicOnBuild("Error while running GraphQL query.")
     return
   }
 

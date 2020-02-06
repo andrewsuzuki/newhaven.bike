@@ -24,7 +24,7 @@ const RoutePage = ({
       title="All Routes"
       className="button-link button-large"
     >
-      <strong>🠰 All Routes</strong>
+      <strong>&#11013; All Routes</strong>
     </Link>
     <h1>
       {title}
@@ -66,6 +66,7 @@ const RoutePage = ({
     <h3>Preview</h3>
     <iframe
       title={title}
+      className="route-ride-with-gps-iframe"
       src={`https://ridewithgps.com/embeds?type=route&id=${ride_with_gps}&sampleGraph=true`}
       style={{ width: 1, minWidth: "100%", height: 700, border: "none" }}
       scrolling="no"
