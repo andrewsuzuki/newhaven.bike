@@ -7,6 +7,10 @@ See [plan.md](./doc/plan.md).
 ## Todos
 
 - Content (see doc/plan.md)
+  - Photos
+    - group rides: outspokin, nhbc rides
+    - volunteering: main photo (bsbc shop hours)
+    - ...more...
 - Bike path / recommended route map
   - react-map-gl with GeoJSON?
 - Route Finder Remaining

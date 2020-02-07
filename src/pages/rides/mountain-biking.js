@@ -26,7 +26,11 @@ const MountainBikingPage = () => (
         to load up and drive a car.
       </p>
       <h3>East Rock</h3>
-      {/* TODO photo */}
+      <img
+        src="/images/east_rock_mtb.jpg"
+        alt="Mountain Biking on East Rock"
+        className="full-image"
+      />
       <p>
         <ExternalLink
           to="http://scrcog.org/wp-content/uploads/trails/new_haven/alt/RecTrails_NH1_Alt_6-2-16.pdf"
@@ -60,7 +64,11 @@ const MountainBikingPage = () => (
         rides! We often ride East Rock and other local trails.
       </p>
       <h3>West Rock</h3>
-      {/* TODO photo */}
+      <img
+        src="/images/west_rock_mtb.jpg"
+        alt="Mountain Biking on West Rock"
+        className="full-image"
+      />
       <p>
         <ExternalLink
           to="https://www.ct.gov/deep/lib/deep/stateparks/maps/WestRockGPS.pdf"
@@ -101,7 +109,11 @@ const MountainBikingPage = () => (
         .
       </p>
       <h3>Maltby Lakes</h3>
-      {/* TODO photo */}
+      <img
+        src="/images/maltby_lakes_mtb.jpg"
+        alt="Mountain Biking at Maltby Lakes"
+        className="full-image"
+      />
       <p>
         <ExternalLink
           to="http://scrcog.org/wp-content/uploads/trails/RWA/alt/RecTrails_RWA7_Alt_6-2-16.pdf"
@@ -168,8 +180,16 @@ const MountainBikingPage = () => (
       </p>
       <h2>Other Trails (Requiring a Drive)</h2>
       <ul className="bulleted">
-        <li>Rockland (Madison, CT)</li>
-        <li>Tyler Mill (Wallingford, CT)</li>
+        <li>
+          <strong>Rockland</strong> in Madison, CT is the most popular mountain
+          biking trail system in southern CT. You can easily spend a day there
+          as the trails are fairly extensive. There's also a pump track. The
+          drive is about 30 minutes from New Haven.
+        </li>
+        <li>
+          <strong>Tyler Mill</strong> in Wallingford, CT is another option. The
+          drive is about 20 minutes from New Haven.
+        </li>
       </ul>
     </Narrow>
   </Layout>
